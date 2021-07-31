@@ -1,7 +1,7 @@
-|function preload(){
+function preload(){
 buttonImg =loadImage("button1.png")
 image1=loadImage("images.jpeg")
-  Bdaymp3=loadSound("")
+  Bdaymp3=loadSound("Song.mp3")
 
 }
 
@@ -22,6 +22,7 @@ function draw() {
   if(keyCode === 32){
     button.visible=false;
     girl.visible=true; 
+    Bdaymp3.play()
   }
 
   drawSprites()
